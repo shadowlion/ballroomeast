@@ -1,4 +1,4 @@
-<template lang="pug">
+<template lang="pug" functional>
   .row.pt-5.pb-2
     .col.text-center
       p Integrate this calendar with
@@ -15,3 +15,9 @@
           download
         ) Download the PDF.
 </template>
+
+<script>
+export default {
+  functional: true
+};
+</script>
