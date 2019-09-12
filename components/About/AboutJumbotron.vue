@@ -1,4 +1,4 @@
-<template lang="pug">
+<template lang="pug" functional>
   b-jumbotron.bg-pic.text-center.mb-0(
     text-variant="light"
     bg-variant="transparent"
@@ -8,6 +8,12 @@
     hr.my-5.border-light
     p.lead.text-left Located in the east end of town in the heart of St. Matthews in Louisville, KY, Ballroom East creates an environment that would inspire everyone to be great dancers. Purchased in 1986, with the encouragement, inspiration, and passion for ballroom dancing of Dr. Alan Thomas, Ballroom East became a reality.
 </template>
+
+<script>
+export default {
+  functional: true
+};
+</script>
 
 <style scoped>
 .bg-pic {
