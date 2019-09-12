@@ -1,12 +1,13 @@
 <template lang="pug" functional>
   .row.pt-5.pb-2
     .col.text-center
-      p Integrate this calendar with
+      p Add this
         |
         |
-        a(href="https://calendar.google.com/calendar?cid=YmFsbHJvb21lYXN0LmNvbV90ZjdvaGdwbmExcTk2YzQ3ZHJvcXVxN2UzMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t") Google Calendar.
+        a(href="https://calendar.google.com/calendar?cid=YmFsbHJvb21lYXN0LmNvbV90ZjdvaGdwbmExcTk2YzQ3ZHJvcXVxN2UzMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t") Google Calendar
         |
         |
+        | to your account.
       p Need an offline version?
         |
         |
