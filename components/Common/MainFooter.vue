@@ -1,4 +1,4 @@
-<template lang="pug">
+<template lang="pug" functional>
   footer.text-white.bg-dark#contact
     .container.pt-5
       .row
@@ -21,3 +21,9 @@
               br
               | Louisville, KY 40207
 </template>
+
+<script>
+export default {
+  functional: true
+};
+</script>

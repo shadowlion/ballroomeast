@@ -1,4 +1,4 @@
-<template lang="pug">
+<template lang="pug" functional>
   .container.pb-5
     .row.pt-3.pb-5
       .col.md-7.d-sm-12
@@ -48,3 +48,9 @@
             source(srcset="https://firebasestorage.googleapis.com/v0/b/ballroom-east.appspot.com/o/public%2Fcompete.jpg?alt=media&token=91dc2e56-f41f-41a4-aaae-927a402e238d" type="image/jpeg")
             img.img-fluid.img-thumbnail(src="https://firebasestorage.googleapis.com/v0/b/ballroom-east.appspot.com/o/public%2Fcompete.webp?alt=media&token=c8b5a60c-a09e-4a03-a687-e9deec255d04" width="375px")
 </template>
+
+<script>
+export default {
+  functional: true
+};
+</script>

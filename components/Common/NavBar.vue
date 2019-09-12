@@ -1,4 +1,4 @@
-<template lang="pug">
+<template lang="pug" functional>
   b-navbar(toggleable="sm" type="dark" variant="dark")
     .container
       b-navbar-brand(to="/")
@@ -12,3 +12,9 @@
           b-nav-item(to="/about") About Us
           b-nav-item(to="#contact") Contact
 </template>
+
+<script>
+export default {
+  functional: true
+};
+</script>

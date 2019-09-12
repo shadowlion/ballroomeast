@@ -1,4 +1,4 @@
-<template lang="pug">
+<template lang="pug" functional>
   b-jumbotron.bg-pic.text-center.mb-5(
     text-variant="light"
     bg-variant="transparent"
@@ -9,6 +9,12 @@
     hr.my-5.border-light
     p.lead.text-left Whether you want to learn anything from Salsa, Swing, to Waltz or Tango, our dance instructors will ensure the pace is comfortable and dances easy to learn. If you have always dreamt of becoming a dance maestro, then Ballroom East is the studio for you! Regardless of age or experience, Ballroom East has the savvy instructors and dance knowledge to make sure your learning experience is comfortable and effective.
 </template>
+
+<script>
+export default {
+  functional: true
+};
+</script>
 
 <style scoped>
 .bg-pic {
