@@ -2,17 +2,17 @@
   section#calendar
     .container.py-5
       google-calendar
-      calendar-download
+      calendar-link
 </template>
 
 <script>
 import GoogleCalendar from "@/components/Calendar/GoogleCalendar";
-import CalendarDownload from "@/components/Calendar/CalendarDownload";
+import CalendarLink from "@/components/Calendar/CalendarLink";
 
 export default {
   components: {
     GoogleCalendar,
-    CalendarDownload
+    CalendarLink
   }
 };
 </script>
