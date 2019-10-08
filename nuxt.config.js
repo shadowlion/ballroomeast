@@ -35,7 +35,19 @@ export default {
     "@nuxtjs/pwa",
     "bootstrap-vue/nuxt",
     "@nuxtjs/eslint-module",
-    ["@nuxtjs/google-analytics", { id: "UA-131406726-1" }]
+    ["@nuxtjs/google-analytics", { id: "UA-131406726-1" }],
+    [
+      "nuxt-fontawesome",
+      {
+        component: "fa",
+        imports: [
+          {
+            set: "@fortawesome/free-brands-svg-icons",
+            icons: ["faFacebookSquare"]
+          }
+        ]
+      }
+    ]
   ],
   /*
    ** Build configuration
