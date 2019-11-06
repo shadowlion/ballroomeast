@@ -11,7 +11,7 @@
       p Need an offline version?
         |
         |
-        a(href="https://firebasestorage.googleapis.com/v0/b/ballroom-east.appspot.com/o/public%2F2019.pdf?alt=media&token=000442bc-8dd3-43f2-b973-69ecdf63b2d9"
+        a(href="/calendar.pdf"
           target="_blank"
           download
         ) Download the PDF.
