@@ -1,20 +1,20 @@
 <template lang="pug">
   #app
     header
-      nav-bar
+      base-navigation
     main
       nuxt
-    main-footer
+    base-footer
 </template>
 
 <script>
-import NavBar from "@/components/Common/NavBar";
-import MainFooter from "@/components/Common/MainFooter";
+import BaseNavigation from "@/components/Common/BaseNavigation";
+import BaseFooter from "@/components/Common/BaseFooter";
 
 export default {
   components: {
-    NavBar,
-    MainFooter
+    BaseNavigation,
+    BaseFooter
   }
 };
 </script>
