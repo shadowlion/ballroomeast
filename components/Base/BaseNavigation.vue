@@ -11,7 +11,7 @@
           b-nav-item(to="/lessons") Lessons
           b-nav-item(to="/about") About Us
           b-nav-item(to="#contact") Contact
-          b-nav-item.d-block.d-sm-none(to="") Find us on Facebook!
+          b-nav-item.d-block.d-sm-none(to="https://facebook.com/ballroomeast") Find us on Facebook!
       b-navbar-brand.text-light.px-4.d-none.d-sm-block(href="https://facebook.com/ballroomeast" target="_blank")
         fa.fa-2x(:icon="['fab', 'facebook-square']")
 </template>
