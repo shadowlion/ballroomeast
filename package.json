@@ -1,46 +1,47 @@
 {
-  "name": "ballroom-east",
+  "name": "ballroomeast",
   "version": "1.0.0",
   "private": true,
-  "description": "Ballroom East Dance Studio website",
-  "author": "Justin Chiou",
   "scripts": {
-    "build": "nuxt build",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "dev": "nuxt",
-    "generate": "nuxt generate",
-    "precommit": "npm run lint",
-    "start": "nuxt start"
+    "build": "nuxt-ts build",
+    "start": "nuxt-ts start",
+    "export": "nuxt-ts export",
+    "serve": "nuxt-ts serve",
+    "generate": "nuxt build && nuxt export",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "npm run lint:js"
+  },
+  "lint-staged": {
+    "*.{js,vue}": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "dependencies": {
-    "@fortawesome/free-brands-svg-icons": "^5.13.0",
-    "@nuxtjs/google-analytics": "^2.2.3",
-    "@nuxtjs/pwa": "^2.6.0",
-    "bootstrap": "^4.4.1",
-    "bootstrap-vue": "^2.11.0",
-    "nuxt": "^2.12.2",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@nuxt/typescript-runtime": "^0.4.10",
+    "@nuxtjs/google-analytics": "^2.4.0",
+    "bootstrap": "^4.5.0",
+    "bootstrap-vue": "^2.15.0",
+    "nuxt": "^2.13.0",
     "nuxt-fontawesome": "^0.4.0",
     "vue-anchor-router-link": "^0.8.4"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "^0.0.1",
-    "@nuxtjs/eslint-module": "^0.0.1",
+    "@nuxt/typescript-build": "^1.0.3",
+    "@nuxtjs/eslint-config": "^3.0.0",
+    "@nuxtjs/eslint-config-typescript": "^2.0.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^5.15.1",
-    "eslint-config-prettier": "^4.1.0",
-    "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-jest": "^22.21.0",
-    "eslint-plugin-node": "^10.0.0",
-    "eslint-plugin-nuxt": "^0.5.2",
-    "eslint-plugin-prettier": "^3.1.3",
-    "eslint-plugin-promise": ">=4.0.1",
-    "eslint-plugin-standard": ">=4.0.0",
-    "eslint-plugin-vue": "^5.2.2",
-    "nodemon": "^1.19.4",
-    "prettier": "^1.19.1",
-    "pug": "^2.0.4",
-    "pug-plain-loader": "^1.0.0",
-    "vue-cli-plugin-axios": "0.0.4"
+    "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5"
   }
 }

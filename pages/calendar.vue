@@ -1,18 +1,8 @@
-<template lang="pug">
-  section#calendar
-    .container.py-5
-      google-calendar
-      calendar-link
+<template>
+  <section id="calendar">
+    <div class="container py-5">
+      <google-calendar></google-calendar>
+      <calendar-link></calendar-link>
+    </div>
+  </section>
 </template>
-
-<script>
-import GoogleCalendar from "@/components/Calendar/GoogleCalendar";
-import CalendarLink from "@/components/Calendar/CalendarLink";
-
-export default {
-  components: {
-    GoogleCalendar,
-    CalendarLink
-  }
-};
-</script>

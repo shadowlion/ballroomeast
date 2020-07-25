@@ -2,38 +2,42 @@
 
 ## Introduction
 
-Ballroom East is a dance studio Louisville, KY - this project aims to create an evolvable Single Page Application (SPA) that is easy to use and revise (if edits are necessary) by swapping out granular components.
+Ballroom East is a dance studio Louisville, KY - this project aims to create an
+evolvable Static Website (SSG) that is easy to use and revise (if edits are
+necessary) by swapping out granular components.
 
 ### Tech Stack
 
-- VueJS (SPA)
+- NuxtJS (SSG)
 - Bootstrap-Vue
-- Bootstrap
+- Bootstrap CSS
 
 ### Setup
 
-Grab the repo from Github:
-
 ```bash
-git clone https://github.com/shadowlion/ballroom-east
-```
+# Grab the repo from Github:
+git clone https://github.com/shadowlion/ballroomeast
 
-Install the dependencies:
+# Install the dependencies
+npm i
 
-```bash
-npm install
-```
+# Run local development server
+npm run dev
 
-For local development, spin up the server!
-
-```bash
-npm run serve
+# For production server purposes, use the following commands for static site
+# generation:
+npm run generate
 ```
 
 ### Development Etiquette
 
-If you're interested in helping develop, [submit an issue](https://github.com/shadowlion/ballroom-east/issues) or a [pull request](https://github.com/shadowlion/ballroom-east/pulls). If you can, describe what you intend to work on by detailing out the problem (or provide a picture).
+If you're interested in helping develop,
+[submit an issue](https://github.com/shadowlion/ballroom-east/issues) or a
+[pull request](https://github.com/shadowlion/ballroom-east/pulls). If you can,
+describe what you intend to work on by detailing out the problem (or provide a
+picture).
 
 ### Contributors
 
-[Justin Chiou](https://github.com/shadowlion) - [Email](mailto:chiou.kai@gmail.com)
+[Justin Chiou](https://github.com/shadowlion) -
+[Email](mailto:chiou.kai@gmail.com)
