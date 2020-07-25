@@ -24,14 +24,22 @@
   </div>
 </template>
 
-<script>
-import d from "./instructor-data.json";
+<script lang="ts">
+import Vue from "vue";
 
-export default {
-  data() {
-    return {
-      instructors: d.instructors,
-    };
+interface Instructor {
+  name: string;
+  src: string;
+  altSrc: string;
+  bio: string;
+}
+
+export default Vue.extend({
+  props: {
+    instructors: {
+      type: Array as () => Instructor[],
+      required: true,
+    },
   },
-};
+});
 </script>
