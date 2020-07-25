@@ -78,7 +78,7 @@ export default Vue.extend({
           hasLink: true,
           link: {
             title: "Contact Us to Schedule",
-            url: "#contact",
+            url: "/contact",
           },
         },
         {
@@ -91,7 +91,7 @@ export default Vue.extend({
           hasLink: true,
           link: {
             title: "Contact Us to Schedule",
-            url: "#contact",
+            url: "/contact",
           },
         },
       ],
