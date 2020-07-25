@@ -1,23 +1,14 @@
-<template lang="pug">
-  #app
-    header
-      base-navigation
-    main
-      nuxt
-    base-footer
+<template>
+  <div id="app">
+    <header>
+      <base-navigation />
+    </header>
+    <main>
+      <nuxt />
+    </main>
+    <base-footer />
+  </div>
 </template>
-
-<script>
-import BaseNavigation from "@/components/Common/BaseNavigation";
-import BaseFooter from "@/components/Common/BaseFooter";
-
-export default {
-  components: {
-    BaseNavigation,
-    BaseFooter
-  }
-};
-</script>
 
 <style>
 #app {

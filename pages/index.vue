@@ -1,17 +1,6 @@
-<template lang="pug">
-  section#home
-    home-jumbotron
-    home-content
+<template>
+  <section id="home">
+    <home-jumbotron></home-jumbotron>
+    <home-content></home-content>
+  </section>
 </template>
-
-<script>
-import HomeJumbotron from "@/components/Home/HomeJumbotron";
-import HomeContent from "@/components/Home/HomeContent";
-
-export default {
-  components: {
-    HomeJumbotron,
-    HomeContent
-  }
-};
-</script>
