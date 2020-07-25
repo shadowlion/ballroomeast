@@ -22,7 +22,7 @@
       div
         strong {{ lesson.day }}
         br
-        span {{ lessonTimes }}
+        span 8:00pm - 8:45pm
       div
         strong Rate:
         br
@@ -45,10 +45,22 @@
 <script lang="ts">
 import Vue from "vue";
 
+interface Lesson {
+  imgUrl: string;
+  title: string;
+  description: string;
+  rate: string;
+  hasLink: boolean;
+  link: {
+    title: string;
+    url: string;
+  };
+}
+
 export default Vue.extend({
   props: {
     lesson: {
-      type: Object,
+      type: Object as () => Lesson,
       required: true,
     },
   },

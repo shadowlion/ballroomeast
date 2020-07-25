@@ -14,16 +14,27 @@
   </div>
 </template>
 
-<script type="ts">
+<script lang="ts">
 import Vue from "vue";
-import d from "./lessons-data.json";
+
+interface Lesson {
+  imgUrl: string;
+  title: string;
+  description: string;
+  rate: string;
+  hasLink: boolean;
+  link: {
+    title: string;
+    url: string;
+  };
+}
 
 export default Vue.extend({
-  data() {
-    return {
-      lessonTimes: "8:00pm - 8:45pm",
-      lessons: d.lessons
-    };
-  }
+  props: {
+    lessons: {
+      type: Array as () => Lesson[],
+      required: true,
+    },
+  },
 });
 </script>
