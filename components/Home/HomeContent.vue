@@ -80,7 +80,7 @@
           ambiance.
         </p>
         <p class="lead">
-          <nuxt-link to="/calendar">
+          <nuxt-link to="/calendar" class="text-muted">
             Check out our calendar for more information >>
           </nuxt-link>
         </p>
@@ -101,7 +101,9 @@
           dream of inspiring everyone to be great dancers.
         </p>
         <p class="lead">
-          <nuxt-link to="/about">Meet the Instructors >></nuxt-link>
+          <nuxt-link to="/about" class="text-muted">
+            Meet the Instructors >>
+          </nuxt-link>
         </p>
       </div>
       <div class="col-md-5 d-none d-md-block">
