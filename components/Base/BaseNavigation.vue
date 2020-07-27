@@ -11,11 +11,19 @@
       <b-navbar-toggle target="nav-collapse" />
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto text-center">
-          <b-nav-item to="/">Home</b-nav-item>
-          <b-nav-item to="/calendar">Calendar</b-nav-item>
-          <b-nav-item to="/lessons">Lessons</b-nav-item>
-          <b-nav-item to="/about">About Us</b-nav-item>
-          <b-nav-item to="/contact">Contact</b-nav-item>
+          <b-nav-item to="/" link-classes="text-light">Home</b-nav-item>
+          <b-nav-item to="/calendar" link-classes="text-light">
+            Calendar
+          </b-nav-item>
+          <b-nav-item to="/lessons" link-classes="text-light">
+            Lessons
+          </b-nav-item>
+          <b-nav-item to="/about" link-classes="text-light">
+            About Us
+          </b-nav-item>
+          <b-nav-item to="/contact" link-classes="text-light">
+            Contact
+          </b-nav-item>
           <b-nav-item
             to="https://facebook.com/ballroomeast"
             class="d-block d-sm-none"
@@ -24,13 +32,15 @@
           </b-nav-item>
         </b-navbar-nav>
       </b-collapse>
-      <b-navbar-brand
+      <a
         href="https://facebook.com/ballroomeast"
         target="_blank"
         class="text-light px-4 d-none d-sm-block"
+        rel="noreferrer"
       >
         <fa class="fa-2x" :icon="['fab', 'facebook-square']" />
-      </b-navbar-brand>
+        <span class="sr-only">Facebook Page</span>
+      </a>
     </div>
   </b-navbar>
 </template>
