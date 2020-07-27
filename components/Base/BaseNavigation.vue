@@ -26,7 +26,7 @@
           </b-nav-item>
           <b-nav-item
             to="https://facebook.com/ballroomeast"
-            class="d-block d-sm-none"
+            link-classes="text-light d-block d-sm-none"
           >
             Find us on Facebook!
           </b-nav-item>
