@@ -13,7 +13,7 @@
           <p>&copy; 1986-{{ new Date().getFullYear() }}</p>
         </div>
         <div class="col-md-4 pb-4">
-          <h5>Contact Us!</h5>
+          <p><strong>Contact Us!</strong></p>
           <ul class="list-unstyled text-small">
             <li>
               <a href="tel:5023964207" class="text-light">(502) 396-4207</a>
@@ -26,7 +26,7 @@
           </ul>
         </div>
         <div class="col-md-4 pb-4">
-          <h5>Visit Us!</h5>
+          <p><strong>Visit Us!</strong></p>
           <a
             href="https://maps.google.com/maps/place/Ballroom+East/@38.2348982,-85.6417317,17z/data=!3m1!4b1!4m5!3m4!1s0x88690ad4bec9d4db:0xecdb76260813022d!8m2!3d38.234894!4d-85.639543"
             class="text-light"
