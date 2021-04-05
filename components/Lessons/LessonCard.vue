@@ -36,11 +36,16 @@
         <span>${{ lesson.rate }}/person</span>
       </address>
     </b-card-text>
-    <b-card-text v-else-if="lesson.rate > 0" class="text-muted">
+    <b-card-text
+      v-else-if="lesson.rates && lesson.rates.length > 0"
+      class="text-muted"
+    >
       <address>
-        <strong>Rate:</strong>
-        <br />
-        <span>${{ lesson.rate }}/45 minutes</span>
+        <strong>Rates:</strong>
+        <span v-for="(rate, idx) in lesson.rates" :key="idx">
+          <br />
+          <span>${{ rate.price }}/{{ rate.time }} minutes</span>
+        </span>
       </address>
     </b-card-text>
     <nuxt-link
