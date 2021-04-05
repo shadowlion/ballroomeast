@@ -36,12 +36,21 @@
         <span>${{ lesson.rate }}/person</span>
       </address>
     </b-card-text>
+    <b-card-text v-else-if="lesson.rate > 0" class="text-muted">
+      <address>
+        <strong>Rate:</strong>
+        <br />
+        <span>${{ lesson.rate }}/45 minutes</span>
+      </address>
+    </b-card-text>
     <b-card-text
-      v-else-if="lesson.rates && lesson.rates.length > 0"
+      v-if="lesson.rates && lesson.rates.length > 0"
       class="text-muted"
     >
+      <small>
+        Starting May 1, 2021, the rates will change to the following:
+      </small>
       <address>
-        <strong>Rates:</strong>
         <span v-for="(rate, idx) in lesson.rates" :key="idx">
           <br />
           <span>${{ rate.price }}/{{ rate.time }} minutes</span>
