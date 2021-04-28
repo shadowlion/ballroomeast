@@ -101,11 +101,11 @@ export default Vue.extend({
           title: "Private Lessons",
           description:
             "Private lessons are available for dancers of all ages and experience levels. This is arguably the best way to become a better dancer, faster. Together, with your instructor, you can decide which are the best mix of dances to learn and which skillsets are best for your level of dance.",
-          rate: 65,
+          rate: 0,
           rates: [
-            { price: 50, time: 30 },
+            { price: 55, time: 30 },
             { price: 80, time: 45 },
-            { price: 100, time: 60 },
+            { price: 110, time: 60 },
           ],
           hasLink: true,
           link: {
