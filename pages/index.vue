@@ -153,3 +153,12 @@
     </section>
   </article>
 </template>
+
+<style scoped>
+.bg-pic {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("https://firebasestorage.googleapis.com/v0/b/ballroom-east.appspot.com/o/public%2FOnH.jpg?alt=media&token=8b5c7ffc-9702-4853-afa9-e0a0fb87d4a2");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
