@@ -1,8 +1,35 @@
 <template>
-  <section id="lessons">
-    <lessons-jumbotron />
-    <lessons-content :lessons="lessons" />
-  </section>
+  <article id="lessons">
+    <section>
+      <b-jumbotron class="text-center mb-0" bg-variant="white" fluid>
+        <template slot="header">Lessons</template>
+        <hr class="my-5" />
+        <p class="lead text-muted text-justify">
+          All of our lessons have a purpose. To have fun and at the same time
+          transform the dancing into something great, whether for social dancing
+          or competitive dancing.
+        </p>
+        <p class="lead text-muted text-justify">
+          A dance partner is not required for any of these lessons. There is no
+          up-front financial commitment, and you only pay for the classes you
+          attend.
+        </p>
+      </b-jumbotron>
+    </section>
+    <section class="bg-light">
+      <div class="container py-5">
+        <div class="row">
+          <div
+            v-for="(lesson, index) in lessons"
+            :key="index"
+            class="col-md-6 col-lg-4"
+          >
+            <LessonCard :lesson="lesson" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
 </template>
 
 <script lang="ts">
