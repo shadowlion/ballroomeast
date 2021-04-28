@@ -44,5 +44,5 @@
         </a>
       </div>
     </b-navbar>
-  <header>
+  </header>
 </template>
