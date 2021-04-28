@@ -1,12 +1,10 @@
 <template>
   <div id="app">
-    <header>
-      <base-navigation />
-    </header>
+    <BaseNavigation />
     <main>
-      <nuxt />
+      <Nuxt />
     </main>
-    <base-footer />
+    <BaseFooter />
   </div>
 </template>
 
