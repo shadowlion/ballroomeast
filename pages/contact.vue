@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" style="height: 75vh;">
+  <section id="contact" style="height: 75vh">
     <div class="container py-5">
       <article>
         <h1>Contact Us</h1>
