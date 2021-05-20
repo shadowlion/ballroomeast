@@ -1,5 +1,26 @@
 <template>
   <article id="home">
+    <b-modal
+      v-if="!postCovidPromo"
+      id="post-covid-modal"
+      centered
+      visible
+      ok-only
+      no-close-on-backdrop
+      no-close-on-esc
+      hide-footer
+    >
+      <iframe
+        src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fballroomeast%2Fvideos%2F461349951829267%2F&show_text=false&width=476"
+        width="476"
+        height="476"
+        style="border: none; overflow: hidden"
+        scrolling="no"
+        frameborder="0"
+        allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      ></iframe>
+    </b-modal>
     <b-jumbotron
       class="bg-pic text-center mb-5"
       text-variant="light"
@@ -153,6 +174,19 @@
     </section>
   </article>
 </template>
+
+<script lang="ts">
+import Vue from "vue";
+export default Vue.extend({
+  computed: {
+    postCovidPromo() {
+      const today = new Date();
+      const end = new Date("2021-06-04 20:30:00");
+      return today.getUTCMinutes() < end.getUTCMinutes();
+    },
+  },
+});
+</script>
 
 <style scoped>
 .bg-pic {
