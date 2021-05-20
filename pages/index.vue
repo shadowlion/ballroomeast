@@ -1,7 +1,7 @@
 <template>
   <article id="home">
     <b-modal
-      v-if="!postCovidPromo"
+      v-if="postCovidPromo"
       id="post-covid-modal"
       centered
       visible
