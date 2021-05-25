@@ -28,7 +28,7 @@
       <address>
         <strong>{{ lesson.day }}</strong>
         <br />
-        <span>8:00pm - 8:45pm</span>
+        <span>7:00pm - 7:45pm</span>
       </address>
       <address>
         <strong>Rate:</strong>
