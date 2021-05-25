@@ -88,7 +88,7 @@ export default Vue.extend({
           description:
             "Every so often, we host Friday night social dance parties. These nights normally consist of a Beginner Class (we don't teach the same dance that happens on Wednesdays), followed by some social dancing.",
           day: "Fridays",
-          rate: 5,
+          rate: 10,
           hasLink: true,
           link: {
             title: "Check the Calendar",

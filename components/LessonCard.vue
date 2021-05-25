@@ -11,9 +11,9 @@
       <address class="text-small">
         <strong>{{ lesson.day }}</strong>
         <br />
-        8:00pm - 8:45pm ~ Beginner Lesson
+        7:00pm - 7:30pm ~ Beginner Lesson
         <br />
-        8:45pm - 10:00pm ~ Dance Social
+        7:30pm - 8:30pm ~ Dance Social
       </address>
       <address>
         <strong>Rate:</strong>
