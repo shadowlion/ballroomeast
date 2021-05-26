@@ -4,7 +4,7 @@ const ContactUsPage = () => {
   return (
     <>
       <Head>
-        <title>Contact Us! | Ballroom East</title>
+        <title>Contact Us | Ballroom East</title>
         <meta name="description" content="Ballroom East Dance Studio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

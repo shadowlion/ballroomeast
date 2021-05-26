@@ -21,7 +21,7 @@ const Header = () => {
               <Nav.Link href="/calendar">Calendar</Nav.Link>
               <Nav.Link href="/lessons">Lessons</Nav.Link>
               <Nav.Link href="/about">About</Nav.Link>
-              <Nav.Link href="/contact">Contact Us</Nav.Link>
+              <Nav.Link href="/contact">Contact</Nav.Link>
               <a
                 href="https://facebook.com/ballroomeast"
                 target="_blank"

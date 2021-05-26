@@ -6,7 +6,7 @@ const AboutUsPage = () => {
   return (
     <>
       <Head>
-        <title>About Us! | Ballroom East</title>
+        <title>About Us | Ballroom East</title>
         <meta name="description" content="Ballroom East Dance Studio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
