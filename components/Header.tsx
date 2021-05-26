@@ -22,9 +22,13 @@ const Header = () => {
               <Nav.Link href="/lessons">Lessons</Nav.Link>
               <Nav.Link href="/about">About</Nav.Link>
               <Nav.Link href="/contact">Contact Us</Nav.Link>
-              <Nav.Link href="https://facebook.com/ballroomeast">
+              <a
+                href="https://facebook.com/ballroomeast"
+                target="_blank"
+                className="nav-link"
+              >
                 Facebook
-              </Nav.Link>
+              </a>
             </Nav>
           </Navbar.Collapse>
         </div>

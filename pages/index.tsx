@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Image, Jumbotron } from "react-bootstrap";
 import style from "../style/home.module.css";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <>
       <Head>
@@ -140,4 +140,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
