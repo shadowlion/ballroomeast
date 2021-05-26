@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Navbar, Nav } from "react-bootstrap";
 
 const Header = () => {
@@ -7,7 +6,7 @@ const Header = () => {
       <Navbar expand="sm" bg="dark" variant="dark">
         <div className="container">
           <Navbar.Brand href="/">
-            <Image
+            <img
               src="/logo.svg"
               alt="Ballroom East Logo"
               width="60px"
