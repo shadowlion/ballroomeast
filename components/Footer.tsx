@@ -22,7 +22,7 @@ const Footer = () => {
               <strong>Contact Us!</strong>
             </p>
             <ul className="list-unstyled text-small">
-              <li>
+              <li className="mb-3">
                 <a href="tel:5023964207" className="text-light">
                   (502) 396-4207
                 </a>

@@ -18,13 +18,13 @@ const HomePage = () => {
           bg-variant="transparent"
           fluid
         >
-          <div className="text-light">
+          <div className="container text-light">
             <div className="text-center">
               <h1 className="display-3">Ballroom East Dance Studio</h1>
               <h2>Let's get you dancing!</h2>
             </div>
-            <hr className="container my-5 border-light" />
-            <p className="container lead text-left">
+            <hr className="my-5 border-light" />
+            <p className="lead text-left">
               Whether you want to learn anything from Salsa, Swing, to Waltz or
               Tango, our dance instructors will ensure the pace is comfortable
               and dances easy to learn. If you have always dreamt of becoming a
@@ -63,6 +63,7 @@ const HomePage = () => {
                 <Image
                   thumbnail
                   src="/img/wedding.webp"
+                  alt="Wedding Photo"
                   height="375px"
                   width="375px"
                 />
@@ -76,8 +77,9 @@ const HomePage = () => {
                 <Image
                   thumbnail
                   src="/img/group.webp"
+                  alt="Social Dance Group"
                   height="375px"
-                  width="375px"
+                  width="499px"
                 />
               </div>
             </div>
@@ -128,8 +130,9 @@ const HomePage = () => {
                 <Image
                   thumbnail
                   src="/img/compete.webp"
+                  alt="Dancesport"
                   height="375px"
-                  width="375px"
+                  width="450px"
                 />
               </div>
             </div>

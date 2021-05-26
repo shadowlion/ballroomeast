@@ -4,7 +4,7 @@ import { Navbar, Nav } from "react-bootstrap";
 const Header = () => {
   return (
     <header>
-      <Navbar expand="sm" bg="dark" variant="dark" className="text-light">
+      <Navbar expand="sm" bg="dark" variant="dark">
         <div className="container">
           <Navbar.Brand href="/">
             <Image
@@ -17,15 +17,26 @@ const Header = () => {
           <Navbar.Toggle aria-controls="nav-collapse" />
           <Navbar.Collapse id="nav-collapse">
             <Nav className="ml-auto text-center">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/calendar">Calendar</Nav.Link>
-              <Nav.Link href="/lessons">Lessons</Nav.Link>
-              <Nav.Link href="/about">About</Nav.Link>
-              <Nav.Link href="/contact">Contact</Nav.Link>
+              <Nav.Link href="/" className="text-white">
+                Home
+              </Nav.Link>
+              <Nav.Link href="/calendar" className="text-white">
+                Calendar
+              </Nav.Link>
+              <Nav.Link href="/lessons" className="text-white">
+                Lessons
+              </Nav.Link>
+              <Nav.Link href="/about" className="text-white">
+                About
+              </Nav.Link>
+              <Nav.Link href="/contact" className="text-white">
+                Contact
+              </Nav.Link>
               <a
                 href="https://facebook.com/ballroomeast"
                 target="_blank"
-                className="nav-link"
+                rel="noreferrer"
+                className="nav-link text-white"
               >
                 Facebook
               </a>
