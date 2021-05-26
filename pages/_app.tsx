@@ -3,7 +3,7 @@ import "../style/global.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-function MyApp({ Component, pageProps }) {
+const App = ({ Component, pageProps }) => {
   return (
     <>
       <Header />
@@ -13,6 +13,6 @@ function MyApp({ Component, pageProps }) {
       <Footer />
     </>
   );
-}
+};
 
-export default MyApp;
+export default App;

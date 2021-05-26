@@ -8,7 +8,12 @@ const Footer = () => {
         <div className="row">
           <div className="col-md-4 pb-4">
             <Link href="/">
-              <Image src="/logo.svg" width="60px" height="60px" />
+              <Image
+                src="/logo.svg"
+                alt="Ballroom East Logo"
+                width="60px"
+                height="60px"
+              />
             </Link>
             <p>&copy; 1986-{new Date().getFullYear()}</p>
           </div>

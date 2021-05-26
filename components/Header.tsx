@@ -14,7 +14,7 @@ const Header = () => {
               height="60px"
             />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Toggle aria-controls="nav-collapse" />
           <Navbar.Collapse id="nav-collapse">
             <Nav className="ml-auto text-center">
               <Nav.Link href="/">Home</Nav.Link>
