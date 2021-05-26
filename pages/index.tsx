@@ -20,7 +20,7 @@ const HomePage = () => {
         >
           <div className="text-light">
             <div className="text-center">
-              <h1>Ballroom East Dance Studio</h1>
+              <h1 className="display-3">Ballroom East Dance Studio</h1>
               <h2>Let's get you dancing!</h2>
             </div>
             <hr className="container my-5 border-light" />

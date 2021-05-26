@@ -17,12 +17,12 @@ const AboutUsPage = () => {
           bg-variant="transparent"
           fluid
         >
-          <div className="text-light">
+          <div className="container text-light">
             <div className="text-center">
-              <h1>Stop by and Visit Us!</h1>
+              <h1 className="display-3">Stop by and Visit Us!</h1>
             </div>
-            <hr className="container my-5 border-light" />
-            <p className="container lead text-left">
+            <hr className="my-5 border-light" />
+            <p className="lead text-left">
               Located in the east end of town in the heart of St. Matthews in
               Louisville, KY, Ballroom East creates an environment that would
               inspire everyone to be great dancers. Purchased in 1986, with the
