@@ -4,7 +4,7 @@ import { Navbar, Nav } from "react-bootstrap";
 const Header = () => {
   return (
     <header>
-      <Navbar expand="sm" bg="dark" variant="dark">
+      <Navbar expand="sm" bg="dark" variant="dark" className="text-light">
         <div className="container">
           <Navbar.Brand href="/">
             <Image
@@ -15,7 +15,7 @@ const Header = () => {
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="nav-collapse text-light">
+          <Navbar.Collapse id="nav-collapse">
             <Nav className="ml-auto text-center">
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/calendar">Calendar</Nav.Link>
