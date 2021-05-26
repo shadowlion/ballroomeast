@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import { Image, Jumbotron } from "react-bootstrap";
+import style from "../style/home.module.css";
 
 const Home = () => {
   return (
@@ -12,23 +13,27 @@ const Home = () => {
       </Head>
       <article id="home">
         <Jumbotron
-          className="bg-pic text-center"
+          className={style.bg}
           text-variant="light"
           bg-variant="transparent"
           fluid
         >
-          <h1>Ballroom East Dance Studio</h1>
-          <h2>Let's get you dancing!</h2>
-          <hr className="container my-5 border-light" />
-          <p className="container lead text-left">
-            Whether you want to learn anything from Salsa, Swing, to Waltz or
-            Tango, our dance instructors will ensure the pace is comfortable and
-            dances easy to learn. If you have always dreamt of becoming a dance
-            maestro, then Ballroom East is the studio for you! Regardless of age
-            or experience, Ballroom East has the savvy instructors and dance
-            knowledge to make sure your learning experience is comfortable and
-            effective.
-          </p>
+          <div className="text-light">
+            <div className="text-center">
+              <h1>Ballroom East Dance Studio</h1>
+              <h2>Let's get you dancing!</h2>
+            </div>
+            <hr className="container my-5 border-light" />
+            <p className="container lead text-left">
+              Whether you want to learn anything from Salsa, Swing, to Waltz or
+              Tango, our dance instructors will ensure the pace is comfortable
+              and dances easy to learn. If you have always dreamt of becoming a
+              dance maestro, then Ballroom East is the studio for you!
+              Regardless of age or experience, Ballroom East has the savvy
+              instructors and dance knowledge to make sure your learning
+              experience is comfortable and effective.
+            </p>
+          </div>
         </Jumbotron>
         <section className="container pb-5">
           <div className="row pt-3 pb-5">
@@ -57,7 +62,7 @@ const Home = () => {
               <div className="text-center">
                 <Image
                   thumbnail
-                  src="/wedding.webp"
+                  src="/img/wedding.webp"
                   height="375px"
                   width="375px"
                 />
@@ -70,7 +75,7 @@ const Home = () => {
               <div className="text-center">
                 <Image
                   thumbnail
-                  src="/group.webp"
+                  src="/img/group.webp"
                   height="375px"
                   width="375px"
                 />
@@ -122,7 +127,7 @@ const Home = () => {
               <div className="text-center">
                 <Image
                   thumbnail
-                  src="/compete.webp"
+                  src="/img/compete.webp"
                   height="375px"
                   width="375px"
                 />
