@@ -18,7 +18,7 @@ class MyDocument extends Document {
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
 
-              gtag('config', ${NEXT_PUBLIC_GOOGLE_ANALYTICS});`,
+              gtag('config', '${NEXT_PUBLIC_GOOGLE_ANALYTICS}');`,
             }}
           />
         </Head>
