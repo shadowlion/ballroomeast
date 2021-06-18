@@ -73,8 +73,8 @@ const LessonsPage = () => {
                     <Card.Text>
                       Every so often, we host Friday night social dance parties.
                       These nights normally consist of a Beginner Class (we
-                      don't teach the same dance that happens on Wednesdays),
-                      followed by some social dancing.
+                      don&apos;t teach the same dance that happens on
+                      Wednesdays), followed by some social dancing.
                     </Card.Text>
                     <Card.Text className="text-muted">
                       <address>
@@ -132,8 +132,8 @@ const LessonsPage = () => {
                     <Card.Text>
                       Out-of-town coaching, private wedding party/group lessons,
                       classes for kids - if you need something more tailored to
-                      your liking, contact us and we'll work with you to getting
-                      that set up.
+                      your liking, contact us and we&apos;ll work with you to
+                      getting that set up.
                     </Card.Text>
                     <Card.Link className="mb-0 text-muted" href="/contact">
                       Contact Us to schedule &gt;&gt;

@@ -21,7 +21,7 @@ const HomePage = () => {
           <div className="container text-light">
             <div className="text-center">
               <h1 className="display-3">Ballroom East Dance Studio</h1>
-              <h2>Let's get you dancing!</h2>
+              <h2>Let&apos;s get you dancing!</h2>
             </div>
             <hr className="my-5 border-light" />
             <p className="lead text-left">
@@ -51,7 +51,7 @@ const HomePage = () => {
                 reception.
               </p>
               <p className="lead">
-                <Link href="/lessons">
+                <Link href="/lessons" passHref>
                   <span className="text-muted">
                     Check out which lesson is right for you &gt;&gt;
                   </span>
@@ -95,7 +95,7 @@ const HomePage = () => {
                 instruction and social ambiance.
               </p>
               <p className="lead">
-                <Link href="/calendar">
+                <Link href="/calendar" passHref>
                   <span className="text-muted">
                     Check out our calendar for more information &gt;&gt;
                   </span>
@@ -118,7 +118,7 @@ const HomePage = () => {
                 instructors dream of inspiring everyone to be great dancers.
               </p>
               <p className="lead">
-                <Link href="/about">
+                <Link href="/about" passHref>
                   <span className="text-muted">
                     Meet the Instructors &gt;&gt;
                   </span>

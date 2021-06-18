@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
@@ -6,8 +7,8 @@ const Footer = () => {
       <div className="container pt-5">
         <div className="row">
           <div className="col-md-4 pb-4">
-            <Link href="/">
-              <img
+            <Link href="/" passHref>
+              <Image
                 src="/logo.svg"
                 alt="Ballroom East Logo"
                 width="60px"

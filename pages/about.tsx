@@ -37,8 +37,14 @@ const AboutUsPage = () => {
           </div>
           <div className="row">
             {instructors.map((instructor) => (
-              <div className="col-md-4">
-                <Image src={instructor.src} thumbnail fluid roundedCircle />
+              <div className="col-md-4" key={instructor.name}>
+                <Image
+                  src={instructor.src}
+                  alt={instructor.name}
+                  thumbnail
+                  fluid
+                  roundedCircle
+                />
                 <h2 className="pt-3">{instructor.name}</h2>
                 <p className="text-justify">{instructor.bio}</p>
               </div>
