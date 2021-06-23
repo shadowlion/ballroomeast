@@ -1,10 +1,11 @@
 import Head from "next/head";
 import Link from "next/link";
 import { Card, Jumbotron } from "react-bootstrap";
+import Layout from "../components/Layout";
 
 const LessonsPage = () => {
   return (
-    <>
+    <Layout>
       <Head>
         <title>Lessons | Ballroom East</title>
         <meta name="description" content="Ballroom East Dance Studio" />
@@ -145,7 +146,7 @@ const LessonsPage = () => {
           </div>
         </section>
       </article>
-    </>
+    </Layout>
   );
 };
 

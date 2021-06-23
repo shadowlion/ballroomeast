@@ -1,8 +1,9 @@
 import Head from "next/head";
+import Layout from "../components/Layout";
 
 const ContactUsPage = () => {
   return (
-    <>
+    <Layout>
       <Head>
         <title>Contact Us | Ballroom East</title>
         <meta name="description" content="Ballroom East Dance Studio" />
@@ -18,7 +19,7 @@ const ContactUsPage = () => {
           <a href="mailto:linda@ballroomeast.com">linda@ballroomeast.com</a>
         </p>
       </article>
-    </>
+    </Layout>
   );
 };
 

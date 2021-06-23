@@ -1,9 +1,10 @@
 import Head from "next/head";
 import { ResponsiveEmbed } from "react-bootstrap";
+import Layout from "../components/Layout";
 
 const CalendarPage = () => {
   return (
-    <>
+    <Layout>
       <Head>
         <title>Calendar | Ballroom East</title>
         <meta name="description" content="Ballroom East Dance Studio" />
@@ -31,7 +32,7 @@ const CalendarPage = () => {
           </div>
         </div>
       </article>
-    </>
+    </Layout>
   );
 };
 

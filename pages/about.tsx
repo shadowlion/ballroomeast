@@ -1,10 +1,11 @@
 import Head from "next/head";
 import { Image, Jumbotron } from "react-bootstrap";
+import Layout from "../components/Layout";
 import style from "../style/about.module.css";
 
 const AboutUsPage = () => {
   return (
-    <>
+    <Layout>
       <Head>
         <title>About Us | Ballroom East</title>
         <meta name="description" content="Ballroom East Dance Studio" />
@@ -52,7 +53,7 @@ const AboutUsPage = () => {
           </div>
         </div>
       </article>
-    </>
+    </Layout>
   );
 };
 

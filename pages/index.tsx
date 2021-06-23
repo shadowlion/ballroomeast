@@ -1,11 +1,12 @@
 import Head from "next/head";
 import Link from "next/link";
 import { Image, Jumbotron } from "react-bootstrap";
+import Layout from "../components/Layout";
 import style from "../style/home.module.css";
 
 const HomePage = () => {
   return (
-    <>
+    <Layout>
       <Head>
         <title>Home | Ballroom East</title>
         <meta name="description" content="Ballroom East Dance Studio" />
@@ -139,7 +140,7 @@ const HomePage = () => {
           </div>
         </section>
       </article>
-    </>
+    </Layout>
   );
 };
 
