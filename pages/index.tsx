@@ -1,8 +1,11 @@
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
-import { Image, Jumbotron } from "react-bootstrap";
 import Layout from "../components/Layout";
 import style from "../style/home.module.css";
+import WeddingImg from "../public/img/wedding.webp";
+import GroupImg from "../public/img/group.webp";
+import CompeteImg from "../public/img/compete.webp";
 
 const HomePage = () => {
   return (
@@ -13,13 +16,8 @@ const HomePage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <article id="home">
-        <Jumbotron
-          className={style.bg}
-          text-variant="light"
-          bg-variant="transparent"
-          fluid
-        >
-          <div className="container text-light">
+        <section className={style.bg}>
+          <div className="container py-5 text-light">
             <div className="text-center">
               <h1 className="display-3">Ballroom East Dance Studio</h1>
               <h2>Let&apos;s get you dancing!</h2>
@@ -35,8 +33,8 @@ const HomePage = () => {
               experience is comfortable and effective.
             </p>
           </div>
-        </Jumbotron>
-        <section className="container pb-5">
+        </section>
+        <section className="container py-5">
           <div className="row pt-3 pb-5">
             <div className="col-md-7 d-sm-12">
               <h2 className="font-weight-bold mt-5">
@@ -52,21 +50,21 @@ const HomePage = () => {
                 reception.
               </p>
               <p className="lead">
-                <Link href="/lessons" passHref>
-                  <span className="text-muted">
-                    Check out which lesson is right for you &gt;&gt;
-                  </span>
+                <Link href="/lessons">
+                  <a>
+                    <span className="text-muted">
+                      Check out which lesson is right for you &gt;&gt;
+                    </span>
+                  </a>
                 </Link>
               </p>
             </div>
             <div className="col-md-5 d-none d-md-block">
               <div className="text-center">
                 <Image
-                  thumbnail
-                  src="/img/wedding.webp"
+                  className="img-thumbnail"
+                  src={WeddingImg}
                   alt="Wedding Photo"
-                  height="375px"
-                  width="375px"
                 />
               </div>
             </div>
@@ -76,11 +74,9 @@ const HomePage = () => {
             <div className="col-md-5 d-none d-md-block">
               <div className="text-center">
                 <Image
-                  thumbnail
-                  src="/img/group.webp"
+                  className="img-thumbnail"
+                  src={GroupImg}
                   alt="Social Dance Group"
-                  height="375px"
-                  width="499px"
                 />
               </div>
             </div>
@@ -96,10 +92,12 @@ const HomePage = () => {
                 instruction and social ambiance.
               </p>
               <p className="lead">
-                <Link href="/calendar" passHref>
-                  <span className="text-muted">
-                    Check out our calendar for more information &gt;&gt;
-                  </span>
+                <Link href="/calendar">
+                  <a>
+                    <span className="text-muted">
+                      Check out our calendar for more information &gt;&gt;
+                    </span>
+                  </a>
                 </Link>
               </p>
             </div>
@@ -119,21 +117,21 @@ const HomePage = () => {
                 instructors dream of inspiring everyone to be great dancers.
               </p>
               <p className="lead">
-                <Link href="/about" passHref>
-                  <span className="text-muted">
-                    Meet the Instructors &gt;&gt;
-                  </span>
+                <Link href="/about">
+                  <a>
+                    <span className="text-muted">
+                      Meet the Instructors &gt;&gt;
+                    </span>
+                  </a>
                 </Link>
               </p>
             </div>
             <div className="col-md-5 d-none d-md-block">
               <div className="text-center">
                 <Image
-                  thumbnail
-                  src="/img/compete.webp"
-                  alt="Dancesport"
-                  height="375px"
-                  width="450px"
+                  className="img-thumbnail"
+                  src={CompeteImg}
+                  alt="dancesport"
                 />
               </div>
             </div>
