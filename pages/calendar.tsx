@@ -13,7 +13,7 @@ const CalendarPage = () => {
         <div className="container py-5">
           <div className="row text-center justify-content-center">
             <div className="col-md-8">
-              <div className="embed-responsive embed-responsive-1by1">
+              <div className="ratio ratio-1x1">
                 <iframe src="https://calendar.google.com/calendar/embed?src=ballroomeast.com_tf7ohgpna1q96c47droquq7e30%40group.calendar.google.com&ctz=America%2FNew_York&mode=AGENDA" />
               </div>
             </div>

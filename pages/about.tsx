@@ -42,7 +42,7 @@ const AboutUsPage = () => {
                 alt="image of Charles Jones"
               />
               <h2 className="pt-3">Charles Jones</h2>
-              <p className="text-justify">
+              <p className="text-start">
                 Charles is a retired ballroom professional who currently teaches
                 both competitors and non-competitors alike and also adjudicates
                 ballroom competitions. At one point in time, together with Linda
@@ -59,7 +59,7 @@ const AboutUsPage = () => {
                 alt="image of Linda Jackson"
               />
               <h2 className="pt-3">Linda Jackson</h2>
-              <p className="text-justify">
+              <p className="text-start">
                 Linda founded the Ballroom East Dance Studio in 1986. With her
                 professional dance partnership to Charles Jones of over ten
                 years, she went on to becoming the United States Rising Star
@@ -76,7 +76,7 @@ const AboutUsPage = () => {
                 alt="image of Chase Abell"
               />
               <h2 className="pt-3">Chase Abell</h2>
-              <p className="text-justify">
+              <p className="text-start">
                 After competing Pro/Am with Linda Jackson for many years, Chase
                 started competing in the Amateur division. Together, with his
                 then-parther Taylor Shorten, he became a finalist in USA Dance
