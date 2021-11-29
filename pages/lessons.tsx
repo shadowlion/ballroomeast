@@ -101,14 +101,14 @@ const LessonsPage = () => {
                   <Card.Img variant="top" src="/img/private.jpg" />
                   <Card.Body>
                     <Card.Title>Private Lessons</Card.Title>
-                    <Card.Text>
+                    <p className="card-text">
                       Private lessons are available for dancers of all ages and
                       experience levels. This is arguably the best way to become
                       a better dancer, faster. Together, with your instructor,
                       you can decide which are the best mix of dances to learn
                       and which skillsets are best for your level of dance.
-                    </Card.Text>
-                    <Card.Text className="text-muted">
+                    </p>
+                    <p className="card-text text-muted">
                       <address>
                         <strong>Rate:</strong>
                         <br />
@@ -118,10 +118,26 @@ const LessonsPage = () => {
                         <br />
                         <span>$110/60 minutes</span>
                       </address>
-                    </Card.Text>
-                    <Card.Link className="mb-0 text-muted" href="/contact">
-                      Contact Us to schedule &gt;&gt;
-                    </Card.Link>
+                    </p>
+                    <p className="card-text text-muted">
+                      <address>
+                        <strong>
+                          Note: Starting January 1st, 2022, the rates for
+                          private lessons will change to be as follows:
+                        </strong>
+                        <br />
+                        <span>$60/30 minutes</span>
+                        <br />
+                        <span>$90/45 minutes</span>
+                        <br />
+                        <span>$120/60 minutes</span>
+                      </address>
+                    </p>
+                    <Link href="/contact">
+                      <a className="card-link mb-0 text-muted">
+                        Contact Us to schedule &gt;&gt;
+                      </a>
+                    </Link>
                   </Card.Body>
                 </Card>
               </div>
