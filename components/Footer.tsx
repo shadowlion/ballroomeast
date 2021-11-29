@@ -1,21 +1,26 @@
 import Image from "next/image";
 import Link from "next/link";
+import LogoImg from "../public/logo.svg";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer id="contact" className="text-white bg-dark">
       <div className="container pt-5">
         <div className="row">
           <div className="col-md-4 pb-4">
-            <Link href="/" passHref>
-              <Image
-                src="/logo.svg"
-                alt="Ballroom East Logo"
-                width="60px"
-                height="60px"
-              />
+            <Link href="/">
+              <a>
+                <Image
+                  src={LogoImg}
+                  alt="Ballroom East Logo"
+                  width="60px"
+                  height="60px"
+                />
+              </a>
             </Link>
-            <p>&copy; 1986-{new Date().getFullYear()}</p>
+            <p>&copy; 1986-{currentYear}</p>
           </div>
           <div className="col-md-4 pb-4">
             <p>
