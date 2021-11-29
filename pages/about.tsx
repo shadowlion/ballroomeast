@@ -1,7 +1,10 @@
 import Head from "next/head";
-import { Image, Jumbotron } from "react-bootstrap";
+import Image from "next/image";
 import Layout from "../components/Layout";
 import style from "../style/about.module.css";
+import CharlesImg from "../public/img/instructor_charles_jones.webp";
+import LindaImg from "../public/img/instructor_linda_jackson.webp";
+import ChaseImg from "../public/img/instructor_chase_abell.webp";
 
 const AboutUsPage = () => {
   return (
@@ -12,13 +15,8 @@ const AboutUsPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <article id="about">
-        <Jumbotron
-          className={style.bg}
-          text-variant="light"
-          bg-variant="transparent"
-          fluid
-        >
-          <div className="container text-light">
+        <section className={style.bg}>
+          <div className="container py-5 text-light">
             <div className="text-center">
               <h1 className="display-3">Stop by and Visit Us!</h1>
             </div>
@@ -31,48 +29,68 @@ const AboutUsPage = () => {
               Dr. Alan Thomas, Ballroom East became a reality.
             </p>
           </div>
-        </Jumbotron>
+        </section>
         <div className="container py-5 text-center">
           <div className="row py-3 justify-content-center">
             <h2 className="font-weight-bold">Meet our Instructors!</h2>
           </div>
           <div className="row">
-            {instructors.map((instructor) => (
-              <div className="col-md-4" key={instructor.name}>
-                <Image
-                  src={instructor.src}
-                  alt={instructor.name}
-                  thumbnail
-                  fluid
-                  roundedCircle
-                />
-                <h2 className="pt-3">{instructor.name}</h2>
-                <p className="text-justify">{instructor.bio}</p>
-              </div>
-            ))}
+            <div className="col-md-4">
+              <Image
+                className="img-thumbnail rounded"
+                src={CharlesImg}
+                alt="image of Charles Jones"
+              />
+              <h2 className="pt-3">Charles Jones</h2>
+              <p className="text-justify">
+                Charles is a retired ballroom professional who currently teaches
+                both competitors and non-competitors alike and also adjudicates
+                ballroom competitions. At one point in time, together with Linda
+                Jackson, he was the United States Rising Star Champion in
+                International Standard. Coupled with being a finalist in
+                multiple competitions throughout the United States, Charles has
+                received certifications for the highest commendation.
+              </p>
+            </div>
+            <div className="col-md-4">
+              <Image
+                className="img-thumbnail rounded"
+                src={LindaImg}
+                alt="image of Linda Jackson"
+              />
+              <h2 className="pt-3">Linda Jackson</h2>
+              <p className="text-justify">
+                Linda founded the Ballroom East Dance Studio in 1986. With her
+                professional dance partnership to Charles Jones of over ten
+                years, she went on to becoming the United States Rising Star
+                Champion in International Standard and won numerous awards and
+                titles across the country. Now retired, Linda currently teaches
+                both competitors and non-competitors alike and also adjudicates
+                ballroom competitions.
+              </p>
+            </div>
+            <div className="col-md-4">
+              <Image
+                className="img-thumbnail rounded"
+                src={ChaseImg}
+                alt="image of Chase Abell"
+              />
+              <h2 className="pt-3">Chase Abell</h2>
+              <p className="text-justify">
+                After competing Pro/Am with Linda Jackson for many years, Chase
+                started competing in the Amateur division. Together, with his
+                then-parther Taylor Shorten, he became a finalist in USA Dance
+                Nationals, Youth Division, and quarter-finalist in the Adult
+                Division. Currently, Chase is the President of USA Dance,
+                Louisville Chapter. He also competes Pro/Am with his students in
+                both competitions and showcases.
+              </p>
+            </div>
           </div>
         </div>
       </article>
     </Layout>
   );
 };
-
-const instructors = [
-  {
-    name: "Charles Jones",
-    src: "/img/instructor_charles_jones.webp",
-    bio: "Charles is a retired ballroom professional who currently teaches both competitors and non-competitors alike and also adjudicates ballroom competitions. At one point in time, together with Linda Jackson, he was the United States Rising Star Champion in International Standard. Coupled with being a finalist in multiple competitions throughout the United States, Charles has received certifications for the highest commendation.",
-  },
-  {
-    name: "Linda Jackson",
-    src: "/img/instructor_linda_jackson.webp",
-    bio: "Linda founded the Ballroom East Dance Studio in 1986. With her professional dance partnership to Charles Jones of over ten years, she went on to becoming the United States Rising Star Champion in International Standard and won numerous awards and titles across the country. Now retired, Linda currently teaches both competitors and non-competitors alike and also adjudicates ballroom competitions.",
-  },
-  {
-    name: "Chase Abell",
-    src: "/img/instructor_chase_abell.webp",
-    bio: "After competing Pro/Am with Linda Jackson for many years, Chase started competing in the Amateur division. Together, with his then-parther Taylor Shorten, he became a finalist in USA Dance Nationals, Youth Division, and quarter-finalist in the Adult Division. Currently, Chase is the President of USA Dance, Louisville Chapter. He also competes Pro/Am with his students in both competitions and showcases.",
-  },
-];
 
 export default AboutUsPage;
