@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Layout from "../components/Layout";
 import style from "../style/home.module.css";
-import WeddingImg from "../public/img/wedding.webp";
-import GroupImg from "../public/img/group.webp";
-import CompeteImg from "../public/img/compete.webp";
+import WeddingImg from "../../public/img/wedding.webp";
+import GroupImg from "../../public/img/group.webp";
+import CompeteImg from "../../public/img/compete.webp";
 
 const HomePage = () => {
   return (

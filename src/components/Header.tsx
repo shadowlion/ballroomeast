@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "../public/logo.svg";
+import Logo from "../../public/logo.svg";
 
 const Header = () => {
   return (
@@ -60,7 +60,7 @@ const Header = () => {
                   href="https://facebook.com/ballroomeast"
                   target="_blank"
                   rel="noreferrer"
-                  className="nav-link text-white"
+                  className="nav-link text-light"
                 >
                   Facebook
                 </a>

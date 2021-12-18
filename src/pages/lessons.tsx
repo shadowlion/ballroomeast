@@ -2,10 +2,10 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Layout from "../components/Layout";
-import BeginnerImg from "../public/img/beginner.jpg";
-import SocialImg from "../public/img/social.jpg";
-import PrivateImg from "../public/img/private.jpg";
-import CustomImg from "../public/img/custom.jpg";
+import BeginnerImg from "../../public/img/beginner.jpg";
+import SocialImg from "../../public/img/social.jpg";
+import PrivateImg from "../../public/img/private.jpg";
+import CustomImg from "../../public/img/custom.jpg";
 
 const priceChange = (datestring: string): boolean => {
   return Date.parse(new Date().toString()) - Date.parse(datestring) <= 0;

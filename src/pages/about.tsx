@@ -2,9 +2,9 @@ import Head from "next/head";
 import Image from "next/image";
 import Layout from "../components/Layout";
 import style from "../style/about.module.css";
-import CharlesImg from "../public/img/instructor_charles_jones.webp";
-import LindaImg from "../public/img/instructor_linda_jackson.webp";
-import ChaseImg from "../public/img/instructor_chase_abell.webp";
+import CharlesImg from "../../public/img/instructor_charles_jones.webp";
+import LindaImg from "../../public/img/instructor_linda_jackson.webp";
+import ChaseImg from "../../public/img/instructor_chase_abell.webp";
 
 const AboutUsPage = () => {
   return (
