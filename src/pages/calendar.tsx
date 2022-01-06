@@ -27,6 +27,11 @@ const CalendarPage = () => {
                 </a>{" "}
                 to your account.
               </p>
+              <p>
+                <a href="../../2022_schedule.pdf" download={true}>
+                  Download a printable schedule!
+                </a>
+              </p>
             </div>
           </div>
         </div>
