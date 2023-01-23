@@ -7,10 +7,6 @@ import SocialImg from "../../public/img/social.jpg";
 import PrivateImg from "../../public/img/private.jpg";
 import CustomImg from "../../public/img/custom.jpg";
 
-const priceChange = (datestring: string): boolean => {
-  return Date.parse(new Date().toString()) - Date.parse(datestring) <= 0;
-};
-
 const LessonsPage = () => {
   return (
     <Layout>
@@ -67,13 +63,14 @@ const LessonsPage = () => {
                         <br />
                         <strong>Rate:</strong>
                         <br />
-                        <span>$10/person</span>
+                        <span>$11/person (incl. sales tax)</span>
                       </address>
                     </div>
-                    <Link href="/calendar">
-                      <a className="card-link mb-0 text-muted">
-                        Check the Calendar &gt;&gt;
-                      </a>
+                    <Link
+                      href="/calendar"
+                      className="card-link mb-0 link-secondary text-decoration-none"
+                    >
+                      Check the Calendar &gt;&gt;
                     </Link>
                   </section>
                 </div>
@@ -103,13 +100,14 @@ const LessonsPage = () => {
                         <br />
                         <strong>Rate:</strong>
                         <br />
-                        <span>$10/person</span>
+                        <span>$11/person (incl. sales tax)</span>
                       </address>
                     </div>
-                    <Link href="/calendar">
-                      <a className="card-link mb-0 text-muted">
-                        Check the Calendar &gt;&gt;
-                      </a>
+                    <Link
+                      href="/calendar"
+                      className="card-link mb-0 link-secondary text-decoration-none"
+                    >
+                      Check the Calendar &gt;&gt;
                     </Link>
                   </section>
                 </div>
@@ -129,51 +127,22 @@ const LessonsPage = () => {
                       you can decide which are the best mix of dances to learn
                       and which skillsets are best for your level of dance.
                     </p>
-                    {priceChange("2022-01-01") ? (
-                      <>
-                        <div className="card-text text-muted">
-                          <address>
-                            <strong>Rate:</strong>
-                            <br />
-                            <span>$55/30 minutes</span>
-                            <br />
-                            <span>$80/45 minutes</span>
-                            <br />
-                            <span>$110/60 minutes</span>
-                          </address>
-                        </div>
-                        <div className="card-text text-muted">
-                          <address>
-                            <strong>
-                              Note: Starting January 1st, 2022, the rates for
-                              private lessons will change to be as follows:
-                            </strong>
-                            <br />
-                            <span>$60/30 minutes</span>
-                            <br />
-                            <span>$90/45 minutes</span>
-                            <br />
-                            <span>$120/60 minutes</span>
-                          </address>
-                        </div>
-                      </>
-                    ) : (
-                      <div className="card-text text-muted">
-                        <address>
-                          <strong>Rate:</strong>
-                          <br />
-                          <span>$60/30 minutes</span>
-                          <br />
-                          <span>$90/45 minutes</span>
-                          <br />
-                          <span>$120/60 minutes</span>
-                        </address>
-                      </div>
-                    )}
-                    <Link href="/contact">
-                      <a className="card-link mb-0 text-muted">
-                        Contact Us to schedule &gt;&gt;
-                      </a>
+                    <div className="card-text text-muted">
+                      <address>
+                        <strong>Rate (incl. sales tax):</strong>
+                        <br />
+                        <span>$64/30 minutes</span>
+                        <br />
+                        <span>$96/45 minutes</span>
+                        <br />
+                        <span>$128/60 minutes</span>
+                      </address>
+                    </div>
+                    <Link
+                      href="/contact"
+                      className="card-link mb-0 link-secondary text-decoration-none"
+                    >
+                      Contact Us to schedule &gt;&gt;
                     </Link>
                   </section>
                 </div>
@@ -193,10 +162,11 @@ const LessonsPage = () => {
                       your liking, contact us and we&apos;ll work with you to
                       getting that set up.
                     </p>
-                    <Link href="/contact">
-                      <a className="card-link mb-0 text-muted">
-                        Contact Us to schedule &gt;&gt;
-                      </a>
+                    <Link
+                      href="/contact"
+                      className="card-link mb-0 link-secondary text-decoration-none"
+                    >
+                      Contact Us to schedule &gt;&gt;
                     </Link>
                   </section>
                 </div>

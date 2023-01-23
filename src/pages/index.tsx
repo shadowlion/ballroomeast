@@ -50,12 +50,11 @@ const HomePage = () => {
                 reception.
               </p>
               <p className="lead">
-                <Link href="/lessons">
-                  <a>
-                    <span className="text-muted">
-                      Check out which lesson is right for you &gt;&gt;
-                    </span>
-                  </a>
+                <Link
+                  href="/lessons"
+                  className="link-secondary text-decoration-none"
+                >
+                  Check out which lesson is right for you &gt;&gt;
                 </Link>
               </p>
             </div>
@@ -92,12 +91,11 @@ const HomePage = () => {
                 instruction and social ambiance.
               </p>
               <p className="lead">
-                <Link href="/calendar">
-                  <a>
-                    <span className="text-muted">
-                      Check out our calendar for more information &gt;&gt;
-                    </span>
-                  </a>
+                <Link
+                  href="/calendar"
+                  className="link-secondary text-decoration-none"
+                >
+                  Check out our calendar for more information &gt;&gt;
                 </Link>
               </p>
             </div>
@@ -117,12 +115,11 @@ const HomePage = () => {
                 instructors dream of inspiring everyone to be great dancers.
               </p>
               <p className="lead">
-                <Link href="/about">
-                  <a>
-                    <span className="text-muted">
-                      Meet the Instructors &gt;&gt;
-                    </span>
-                  </a>
+                <Link
+                  href="/about"
+                  className="link-secondary text-decoration-none"
+                >
+                  Meet the Instructors &gt;&gt;
                 </Link>
               </p>
             </div>

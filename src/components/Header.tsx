@@ -7,15 +7,8 @@ const Header = () => {
     <header>
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
         <div className="container">
-          <Link href="/">
-            <a className="navbar-brand">
-              <Image
-                src={Logo}
-                alt="Ballroom East Logo"
-                width="60px"
-                height="60px"
-              />
-            </a>
+          <Link href="/" className="navbar-brand">
+            <Image src={Logo} alt="Ballroom East Logo" width={60} height={60} />
           </Link>
           <button
             className="navbar-toggler"
@@ -31,28 +24,43 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <Link href="/">
-                  <a className="nav-link text-light">Home</a>
+                <Link
+                  href="/"
+                  className="nav-link link-light text-decoration-none"
+                >
+                  Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href="/calendar">
-                  <a className="nav-link text-light">Calendar</a>
+                <Link
+                  href="/calendar"
+                  className="nav-link link-light text-decoration-none"
+                >
+                  Calendar
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href="/lessons">
-                  <a className="nav-link text-light">Lessons</a>
+                <Link
+                  href="/lessons"
+                  className="nav-link link-light text-decoration-none"
+                >
+                  Lessons
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href="/about">
-                  <a className="nav-link text-light">About</a>
+                <Link
+                  href="/about"
+                  className="nav-link link-light text-decoration-none"
+                >
+                  About
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href="/contact">
-                  <a className="nav-link text-light">Contact</a>
+                <Link
+                  href="/contact"
+                  className="nav-link link-light text-decoration-none"
+                >
+                  Contact
                 </Link>
               </li>
               <li className="nav-item">
