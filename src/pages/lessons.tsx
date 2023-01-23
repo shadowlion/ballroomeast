@@ -42,7 +42,8 @@ const LessonsPage = () => {
                   <Image
                     src={BeginnerImg}
                     alt="image for beginner classes"
-                    className="card-img-top"
+                    className="card-img-top w-100"
+                    height={400}
                   />
                   <section className="card-body">
                     <h5 className="card-title">Group - Beginner</h5>
@@ -80,7 +81,8 @@ const LessonsPage = () => {
                   <Image
                     src={SocialImg}
                     alt="image for social classes"
-                    className="card-img-top"
+                    className="card-img-top w-100"
+                    height={400}
                   />
                   <section className="card-body">
                     <h5 className="card-title">Group - Social Party</h5>
@@ -117,7 +119,8 @@ const LessonsPage = () => {
                   <Image
                     src={PrivateImg}
                     alt="image private lessons"
-                    className="card-img-top"
+                    className="card-img-top w-100"
+                    height={400}
                   />
                   <section className="card-body">
                     <p className="card-text">
@@ -152,7 +155,8 @@ const LessonsPage = () => {
                   <Image
                     src={CustomImg}
                     alt="image for custom services"
-                    className="card-img-top"
+                    className="card-img-top w-100"
+                    height={400}
                   />
                   <section className="card-body">
                     <h5 className="card-title">Customized Services</h5>
